@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>Blitz2.0</title>
+        <link rel="stylesheet" href="/css/styles.css">
+        <!-- Refer this for all setttings:
+            https://ace.c9.io/build/kitchen-sink.html
+        -->
+
+        <!-- For JQuery -->
+        <script src="/jquery-3.5.1.min.js"></script>
+
+        <!-- For ACE Editor -->
+        <script  src="/ace-builds-master/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+        <script  src="/ace-builds-master/src-min-noconflict/ext-language_tools.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Adding Ctrl+Enter func -->
+        <script>
+            $(document).keypress(function (e) {                
+                if ((e.ctrlKey || e.metaKey) && (e.keyCode == 13 || e.keyCode == 10)) {    
+                    $('#run-btn').focus().click();
+                    return false;    //<---- Add this line
+                }
+            });
+
+        </script>
+
+    </head>
+    <body>
+        <div class="top-navbar brdr-man">
+            <!-- <div class="top-navbar-kid">
+                <a href="/">
+                    <img src="/imgs/logo.png" alt="our-logo-da" class="logo">
+                </a>
+            </div> -->
+            <div class="top-navbar-kid logo-name">
+                <span><a href="/"><b>Blitzo</b></a></span>
+            </div>
+            <!-- <div class="top-navbar-kid">
+                <p><a href="/about">About</a></p>
+            </div> -->
+
+            <div class="top-navbar-kid">
+                <select name="lang-sel" id="lang-sel" onchange="onLangChange(value)">
+                    <option value="c_cpp">C++</option>
+                    <option value="java">Java</option>
+                    <option value="python">Python 3</option>
+                </select>
+            </div>
+
+            <div class="top-navbar-kid">
+                <select name="theme-sel" id="theme-sel" onchange="onThemeChange(value)">
+                    <% for (let theme of themes) {%>
+                        <option value=<%= theme %>><%= theme %></option>    
+                    <%}%>
+                </select>
+            </div>
+
+            <div class="top-navbar-kid">
+                <button id="run-btn" onclick="handleRunButton()">Run</button>
+            </div>
+        </div>

@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+.brdr-man {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+/* For the top tool bar */
+.top-navbar {
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+}
+
+.top-navbar-kid {
+    padding: 5px;
+    margin: 5px;
+}
+
+.logo {
+    height: 30px;
+    width: 30px;
+}
+
+.logo-name {
+    color: darkorange;
+}
+
+/* For the code editor area */
+.main-area {
+    display: flex;
+    height: 85vh;
+}
+
+.editor {
+    resize: horizontal;
+    position: relative;
+    overflow: auto;
+    max-width: 90vw;
+    width: 70vw;
+    height: 100%;
+    margin-right: 2.5px;
+    font-size: 1rem;
+}
+
+/* io part */
+.io {
+    width: 30vw;
+    height: 100%;    
+}
+
+.io-kid {
+    resize: both;
+    overflow: auto;
+    max-width: 90vw;
+    max-height: 90%;
+    height: 48%;
+    margin-left: 2.5px;
+}
+
+.io-kid > p {
+    text-align: center;
+    margin: 5px auto 5px;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    padding-bottom: 2px;
+}
+
+.iotxt {
+    height: 85%;
+    width: 98%;
+    max-height: 85%;
+    max-width: 98%;
+    margin: 1px auto;
+    display: block;
+    resize: none;
+    border: none;
+}

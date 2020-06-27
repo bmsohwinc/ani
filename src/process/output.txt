@@ -1,0 +1,7 @@
+Time Up!
+4
+Doing this just to test... n = 2
+2
+Doing this just to test... n = 1
+16
+Doing this just to test... n = 4

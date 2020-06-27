@@ -1,0 +1,1 @@
+cat ./process/input.txt | python3 ./process/python_code.py > ./process/output.txt

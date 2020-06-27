@@ -1,0 +1,95 @@
+<%- include('header') %>
+    <div class="main-area">
+        <div class="editor brdr-man" id="editor"></div>
+        <div class="io">
+            <div class="io-kid brdr-man">
+                <p>Input</p>
+                <textarea class="iotxt" name="itxt" id="itxt" cols="30" rows="10"></textarea>
+            </div>
+            <div class="io-kid brdr-man">
+                <p>Output</p>
+                <textarea class="iotxt" name="otxt" id="otxt" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // To be done only once...
+        $(document).ready(() => {
+            fetch('/codes/cpp_code.cpp')
+                .then(res => res.text())
+                .then(txt => {
+                    console.log('The txt for setting is: ', txt);
+                    editor.setValue(txt);
+                });
+        });
+
+        let editor = ace.edit("editor");
+        editor.setTheme("ace/theme/testmate");
+        editor.session.setMode("ace/mode/c_cpp");
+
+        // Enable autocompletion and snippets
+        editor.setOptions({
+            enableBasicAutocompletion: true,
+            enableSnippets: true,
+            enableLiveAutocompletion: true
+        });
+
+        // Setting editor theme
+        function onThemeChange($the_theme) {
+            editor.setTheme("ace/theme/" + $the_theme);
+        }
+
+        // Setting editor language
+        function onLangChange($the_lang) {            
+            editor.session.setMode("ace/mode/" + $the_lang);
+            let codeFilePath = '/codes/';
+
+            switch ($the_lang) {
+                case 'c_cpp':
+                    codeFilePath += 'cpp_code.cpp';
+                    break;
+                case 'java':
+                    codeFilePath += 'java_code.java';
+                    break;
+                case 'python':
+                    codeFilePath += 'python_code.py';
+                    break;
+                default:
+                    break;
+            }
+
+            fetch(codeFilePath)
+                .then(res => res.text())
+                .then(txt => {
+                    console.log('The txt for setting is: ', txt);
+                    editor.setValue(txt);
+                });
+        }
+
+        // submitting the code and getting output
+        function handleRunButton() {       
+            console.log('run button clicked!');
+            let itext = $('textarea#itxt').val();
+            console.log('itext is : ', itext);
+            let codetxt = editor.getSession().getValue();
+            console.log('codetxt is : \n', codetxt);
+            let lang = $('#lang-sel').val();
+
+            $.ajax({
+                method : 'post',
+                url : '/',
+                data : {
+                    theCode : codetxt,
+                    input : itext,
+                    lang : lang
+                },
+                success : (data) => {
+                    
+                    $('#otxt').val(data);
+                    console.log('Code ran successfully and produced the data as: ', data);
+                }
+            });
+        }
+    </script>
+<%- include('footer') %>
