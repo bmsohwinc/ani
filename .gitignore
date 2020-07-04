@@ -1,2 +1,7 @@
 node_modules/
 src/public/ace-builds-master/
+src/process/a.out
+src/process/cppo
+src/process/java_code.class
+src/process/testr.sh
+src/nohup.out
