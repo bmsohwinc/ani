@@ -24,6 +24,16 @@
                 }
             });
 
+            function handleKillButton() {
+                $.ajax({
+                    method : 'get',
+                    url : '/killtheloop',
+                    success : (data) => {
+                        alert('Process was killed');
+                    }
+                });   
+            }
+
         </script>
 
     </head>
@@ -52,7 +62,11 @@
             <div class="top-navbar-kid">
                 <select name="theme-sel" id="theme-sel" onchange="onThemeChange(value)">
                     <% for (let theme of themes) {%>
-                        <option value=<%= theme %>><%= theme %></option>    
+                        <%if (theme == "testmate") {%>
+                            <option selected value=<%= theme %>><%= theme %></option>    
+                        <%} else {%>
+                            <option value=<%= theme %>><%= theme %></option>
+                        <%}%>                        
                     <%}%>
                 </select>
             </div>
@@ -60,4 +74,13 @@
             <div class="top-navbar-kid">
                 <button id="run-btn" onclick="handleRunButton()">Run</button>
             </div>
+
+            <div class="top-navbar-kid">
+                <button onclick="handleKillButton()">Stop Running</button>                
+            </div>
+
+            <div class="top-navbar-kid note-btn">
+                <button><a href="/notes/cp">Take Note</a></button>
+            </div>
         </div>
+

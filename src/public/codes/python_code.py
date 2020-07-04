@@ -1,6 +1,4 @@
-print("Time Up!")
-t = int(input())
-
-for _ in range(t):
-    n = int(input())
-    print(2**n)
+while 1:
+    a = 1
+    a += 1
+    print(2)
