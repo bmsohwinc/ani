@@ -3,6 +3,8 @@ const fs = require('fs');
 const exec = require('child_process').exec;
 const {performance} = require('perf_hooks')
 
+
+
 function init_promise(langType) {
 
     return new Promise(function(resolve, reject) {
@@ -98,7 +100,7 @@ module.exports = (srcPath, acePath) => {
             console.log(result);
             res.sendFile(srcPath + '/process/output.txt');
         }, function(err) {
-            res.send('<b style="color:red;">' + err + '</b>');
+            res.send(err);
         });
         const toc = performance.now();
 

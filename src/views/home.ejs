@@ -68,7 +68,33 @@
         }
 
         // submitting the code and getting output
-        function handleRunButton() {       
+        function handleRunButton() {
+
+
+
+            // check if after 4 sec, there is some output or not.
+            // if not, then kill that process and notify the same.
+            setTimeout(() => {
+                const otxtData = $('#otxt').val();
+                console.log('otxt = ', otxtData);
+                if (otxtData == '') {
+                    $.ajax({
+                        method : 'get',
+                        url : '/killtheloop',
+                        success : (data) => {
+                            $('#errmsg').val(data);
+                            alert(data);
+                            console.log('Code couldn\'t run and threw error as: ', data);
+                        }
+                    });
+                    $('#errmsg').val('Infi loop. So ended process');
+                }
+            }, 4000);
+
+            // clear output and errmsg first
+            $('#otxt').val('');
+            $('#errmsg').val('');
+
             console.log('run button clicked!');
             let itext = $('textarea#itxt').val();
             console.log('itext is : ', itext);

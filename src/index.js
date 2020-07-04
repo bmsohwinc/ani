@@ -8,6 +8,7 @@ const path = require('path');
 const PORT = 12345;
 const aceLangsAndThemesPath = path.join(__dirname + '/public/ace-builds-master/src-noconflict');
 
+
 /**
  * Create objects
  */
@@ -19,9 +20,17 @@ app.set('view engine', 'ejs');
 
 
 /**
+ * Database
+ */
+// TODO
+
+/**
  * Routes
  */
 app.use('/', require('./routes/home')(__dirname, aceLangsAndThemesPath));
+app.use('/killtheloop', require('./routes/killProcess')());
+// app.use('/notes', require('./routes/notes')(connection)); // TODO
+
 
 /**
  * Listen

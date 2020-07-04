@@ -1,0 +1,246 @@
+Server started on port : 12345
+events.js:187
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::12345
+    at Server.setupListenHandle [as _listen2] (net.js:1301:14)
+    at listenInCluster (net.js:1349:12)
+    at Server.listen (net.js:1437:7)
+    at Function.listen (/home/dell/Desktop/OHW/CS/SWE/Web/ide2.0/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/dell/Desktop/OHW/CS/SWE/Web/ide2.0/src/index.js:44:5)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (net.js:1328:8)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21) {
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'listen',
+  address: '::',
+  port: 12345
+}
+events.js:187
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::12345
+    at Server.setupListenHandle [as _listen2] (net.js:1301:14)
+    at listenInCluster (net.js:1349:12)
+    at Server.listen (net.js:1437:7)
+    at Function.listen (/home/dell/Desktop/OHW/CS/SWE/Web/ide2.0/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/dell/Desktop/OHW/CS/SWE/Web/ide2.0/src/index.js:44:5)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (net.js:1328:8)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21) {
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'listen',
+  address: '::',
+  port: 12345
+}
+events.js:187
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::12345
+    at Server.setupListenHandle [as _listen2] (net.js:1301:14)
+    at listenInCluster (net.js:1349:12)
+    at Server.listen (net.js:1437:7)
+    at Function.listen (/home/dell/Desktop/OHW/CS/SWE/Web/ide2.0/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/dell/Desktop/OHW/CS/SWE/Web/ide2.0/src/index.js:44:5)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (net.js:1328:8)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21) {
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'listen',
+  address: '::',
+  port: 12345
+}
+Server started on port : 12345
+Server started on port : 12345
+Server started on port : 12345
+Server started on port : 12345
+Server started on port : 12345
+Server started on port : 12345
+Server started on port : 12345
+Server started on port : 12345
+Server started on port : 12345
+Server started on port : 12345
+req.body is :  { theCode: 'print("Time Up!")\n', input: '', lang: 'python' }
+codeFilePath :  /home/dell/Desktop/OHW/CS/SWE/Web/ide2.0/src/process/python_code.py
+codeFilePath_2 :  /home/dell/Desktop/OHW/CS/SWE/Web/ide2.0/src/public/codes/python_code.py
+[I] Executing the script...
+[ I ] Took 3.289427999407053 millisec for exec...
+
+[I] Script ran successfully
+req.body is :  { theCode: 'print("Time Up!")\n', input: '', lang: 'python' }
+codeFilePath :  /home/dell/Desktop/OHW/CS/SWE/Web/ide2.0/src/process/python_code.py
+codeFilePath_2 :  /home/dell/Desktop/OHW/CS/SWE/Web/ide2.0/src/public/codes/python_code.py
+[I] Executing the script...
+[ I ] Took 8.041183998808265 millisec for exec...
+
+[I] Script ran successfully
+req.body is :  { theCode: 'print("Time Up!")\n', input: '', lang: 'python' }
+codeFilePath :  /home/dell/Desktop/OHW/CS/SWE/Web/ide2.0/src/process/python_code.py
+codeFilePath_2 :  /home/dell/Desktop/OHW/CS/SWE/Web/ide2.0/src/public/codes/python_code.py
+[I] Executing the script...
+[ I ] Took 8.152151001617312 millisec for exec...
+
+[I] Script ran successfully
+req.body is :  {
+  theCode: 'print("Time jnknkjnkjnnkUp!")\n',
+  input: '',
+  lang: 'python'
+}
+codeFilePath :  /home/dell/Desktop/OHW/CS/SWE/Web/ide2.0/src/process/python_code.py
+codeFilePath_2 :  /home/dell/Desktop/OHW/CS/SWE/Web/ide2.0/src/public/codes/python_code.py
+[I] Executing the script...
+[ I ] Took 7.255127999931574 millisec for exec...
+
+[I] Script ran successfully
+req.body is :  {
+  theCode: 't = int(input())\n' +
+    '\n' +
+    'for _ in range(t):\n' +
+    '    n = int(input())\n' +
+    '    ag = 0\n' +
+    '    bg = 0\n' +
+    '    for i in range(n):\n' +
+    '        [g, a, b] = [int(x) for x in input().split()]\n' +
+    '        \n' +
+    '        ag += (g * a / (a + b))\n' +
+    '        bg += (g * b / (a + b))\n' +
+    '    \n' +
+    '    print(ag, bg)',
+  input: '2\n1\n30 2 1\n3\n10 1 1\n20 2 2\n30 3 3',
+  lang: 'python'
+}
+codeFilePath :  /home/dell/Desktop/OHW/CS/SWE/Web/ide2.0/src/process/python_code.py
+codeFilePath_2 :  /home/dell/Desktop/OHW/CS/SWE/Web/ide2.0/src/public/codes/python_code.py
+[I] Executing the script...
+[ I ] Took 3.7101840004324913 millisec for exec...
+
+[I] Script ran successfully
+req.body is :  {
+  theCode: 't = int(input())\n' +
+    '\n' +
+    'for _ in range(t):\n' +
+    '    n = int(input())\n' +
+    '    ag = 0\n' +
+    '    bg = 0\n' +
+    '    for i in range(n):\n' +
+    '        [g, a, b] = [int(x) for x in input().split()]\n' +
+    '        \n' +
+    '        ag += (g * b / (a + b))\n' +
+    '        bg += (g * a / (a + b))\n' +
+    '    \n' +
+    '    print(ag, bg)',
+  input: '2\n1\n30 2 1\n3\n10 1 1\n20 2 2\n30 3 3',
+  lang: 'python'
+}
+codeFilePath :  /home/dell/Desktop/OHW/CS/SWE/Web/ide2.0/src/process/python_code.py
+codeFilePath_2 :  /home/dell/Desktop/OHW/CS/SWE/Web/ide2.0/src/public/codes/python_code.py
+[I] Executing the script...
+[ I ] Took 5.630789000540972 millisec for exec...
+
+[I] Script ran successfully
+events.js:187
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/dell/Desktop/OHW/CS/SWE/Web/ide2.0/node_modules/mysql/lib/protocol/Protocol.js:112:13)
+    at Socket.<anonymous> (/home/dell/Desktop/OHW/CS/SWE/Web/ide2.0/node_modules/mysql/lib/Connection.js:94:28)
+    at Socket.<anonymous> (/home/dell/Desktop/OHW/CS/SWE/Web/ide2.0/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:215:7)
+    at endReadableNT (_stream_readable.js:1184:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/dell/Desktop/OHW/CS/SWE/Web/ide2.0/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (events.js:210:5)
+    at Protocol._delegateError (/home/dell/Desktop/OHW/CS/SWE/Web/ide2.0/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.end (/home/dell/Desktop/OHW/CS/SWE/Web/ide2.0/node_modules/mysql/lib/protocol/Protocol.js:116:8)
+    at Socket.<anonymous> (/home/dell/Desktop/OHW/CS/SWE/Web/ide2.0/node_modules/mysql/lib/Connection.js:94:28)
+    [... lines matching original stack trace ...]
+    at processTicksAndRejections (internal/process/task_queues.js:80:21) {
+  fatal: true,
+  code: 'PROTOCOL_CONNECTION_LOST'
+}
+Server started on port : 12345
+Server started on port : 12345
+Server started on port : 12345
+Server started on port : 12345
+Server started on port : 12345
+Server started on port : 12345
+Server started on port : 12345
+req.body is :  {
+  theCode: '/*\n' +
+    '    I wanna be the very best, like no one ever was.\n' +
+    '*/\n' +
+    '\n' +
+    '#include <bits/stdc++.h>\n' +
+    'using namespace std;\n' +
+    '\n' +
+    'int main() {\n' +
+    '    \n' +
+    '    int t;\n' +
+    '    cin >> t;\n' +
+    '    \n' +
+    '    while(t--) {\n' +
+    '        int n,i,j;\n' +
+    '        string s;\n' +
+    '        cin >> s;\n' +
+    '        n = s.size();\n' +
+    '        \n' +
+    '        int f = 0;\n' +
+    '        int play = 0;\n' +
+    '        while(s.size()) {\n' +
+    '            \n' +
+    '            int diff = 0;\n' +
+    '            for (i=0;i<s.size()-1;i++) {\n' +
+    '                if (s[i] != s[i+1]) {\n' +
+    '                    diff = 1;\n' +
+    '                    play ^= 1;\n' +
+    '                    s = s.substr(0, i-1) + s.substr(i+2, ((s.size() - 1) - (i + 2) + 1));\n' +
+    '                    break;\n' +
+    '                }\n' +
+    '            }\n' +
+    '            \n' +
+    '            if (diff == 0) {\n' +
+    '                break;\n' +
+    '            }\n' +
+    '        }\n' +
+    '        \n' +
+    '        if (play) {\n' +
+    '            cout << "NET\\n";\n' +
+    '        }\n' +
+    '        else {\n' +
+    '            cout << "DA\\n";\n' +
+    '        }\n' +
+    '        \n' +
+    '    }\n' +
+    '    return 0;\n' +
+    '}',
+  input: '3\n01\n1111\n0011\n',
+  lang: 'c_cpp'
+}
+codeFilePath :  /home/dell/Desktop/OHW/CS/SWE/Web/ide2.0/src/process/cpp_code.cpp
+codeFilePath_2 :  /home/dell/Desktop/OHW/CS/SWE/Web/ide2.0/src/public/codes/cpp_code.cpp
+[I] Executing the script...
+[ I ] Took 14.42207199987024 millisec for exec...
+

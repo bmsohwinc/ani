@@ -1,0 +1,50 @@
+<%- include('notes_header') %>
+    <script>
+        function copyCPNoteContent () {
+            document.getElementById("thecode").value =  document.getElementById("code-sheet").innerHTML;
+            document.getElementById("cpnotes").value =  document.getElementById("code-note-sheet").innerHTML;
+            return true;
+        }
+    </script>
+
+    <div class="main-area">
+        <div class="full-note-box brdr-man">
+            
+        </div>
+        <div class="new-note-box brdr-man">
+            <h3>Add a CP notes</h3>
+            <form action="/notes/cp" method="post" onsubmit="return copyCPNoteContent()">
+                <table style="width: 100%;">
+                    <tr>
+                        <td><b><p>Problem Link</p></b></td>
+                        <td><input type="text" name="problink" id="problink"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><b><p>Your Notes</p></b></td>
+                        <td>
+                            <div contenteditable="true" class="note-sheet" id="code-note-sheet"></div>                            
+                            <textarea name="cpnotes" id="cpnotes" style="display: none;"></textarea>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td><b>Problem Code</b></td>
+                        <td>
+                            <div contenteditable="true" class="note-sheet" id="code-sheet"></div>
+                            <textarea name="thecode" id="thecode" style="display: none;"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Material Links</b></td>                        
+                        <td>
+                            <input type="text" name="matlink1" id="matlink1"> <br>
+                            <input type="text" name="matlink2" id="matlink2">
+                        </td>
+                    </tr>
+                </table>
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>    
+<%- include('footer') %>
